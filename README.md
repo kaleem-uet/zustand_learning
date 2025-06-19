@@ -1,3 +1,60 @@
+# Shopping Cart App
+
+A modern, responsive shopping cart web application built with React, Zustand, shadcn/ui, and Tailwind CSS.
+
+## Features
+
+- Product listing with images, descriptions, and prices
+- Add to cart and add to favorites (wishlist) functionality
+- Persistent cart and favorites using Zustand and localStorage
+- Cart and favorites management in a modern side sheet
+- Responsive design for all devices
+- Clean, accessible UI with shadcn/ui and Tailwind CSS
+
+## Getting Started
+
+1. **Install dependencies:**
+   ```bash
+   pnpm install
+   # or
+   npm install
+   # or
+   yarn install
+   ```
+
+2. **Run the development server:**
+   ```bash
+   pnpm dev
+   # or
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+3. **Build for production:**
+   ```bash
+   pnpm build
+   # or
+   npm run build
+   # or
+   yarn build
+   ```
+
+## Project Structure
+
+- `src/components/` – UI components (ProductCard, ProductList, CartSheet, TopBar, etc.)
+- `src/stores/cartStore.tsx` – Zustand store for cart and favorites
+- `src/App.tsx` – Main app entry point
+
+## License
+
+MIT
+
+---
+
+**Short Description:**  
+A modern, responsive shopping cart app with persistent cart and favorites, built using React, Zustand, shadcn/ui, and Tailwind CSS.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
