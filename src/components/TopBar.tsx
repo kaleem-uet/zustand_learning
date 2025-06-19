@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import React, { useState, type ReactNode } from "react";
 import { ShoppingCart, Heart } from "lucide-react";
 import { ProductCardSheet } from "./CartSheet";
 
@@ -8,7 +8,11 @@ interface TopBarProps {
   children?: ReactNode;
 }
 
-export const TopBar: React.FC<TopBarProps> = ({ favoriteCount = 0, cartCount = 0, children }) => {
+export const TopBar: React.FC<TopBarProps> = ({
+  favoriteCount = 0,
+  cartCount = 0,
+  children,
+}) => {
   const [sheetOpen, setSheetOpen] = useState<boolean>(false);
   return (
     <header className="w-full bg-white dark:bg-card shadow-sm py-3 px-4 sm:px-8 flex items-center justify-between sticky top-0 z-30 border-b border-border">
@@ -38,4 +42,4 @@ export const TopBar: React.FC<TopBarProps> = ({ favoriteCount = 0, cartCount = 0
       <ProductCardSheet sheetOpen={sheetOpen} setSheetOpen={setSheetOpen} />
     </header>
   );
-}; 
+};
